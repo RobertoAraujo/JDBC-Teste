@@ -1,5 +1,9 @@
 package br.gov.ac.sefaz;
 
+import br.gov.ac.sefaz.factory.JdbcFActory;
+
+import java.sql.Connection;
+
 public class JdbcAplication {
 
 //    spring.datasource.driverClassName=org.postgresql.Driver
@@ -14,5 +18,10 @@ public class JdbcAplication {
 
     public static void main(String[] args) {
         System.out.println("Aprendendo o JDBC");
+
+        JdbcFActory jdbcFActory= new JdbcFActory();
+
+        Connection conn = jdbcFActory.criarConexao();
+
     }
 }
