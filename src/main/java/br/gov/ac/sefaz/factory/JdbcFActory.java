@@ -28,7 +28,7 @@ public class JdbcFActory {
     }
 
     /**
-     * Roberto Araujo 
+     * Roberto Araujo
      * Tratando erros do sql
      * @param @{link SQLException} excesão
      *
