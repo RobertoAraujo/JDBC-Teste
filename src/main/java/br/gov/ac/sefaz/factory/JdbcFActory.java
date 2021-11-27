@@ -22,16 +22,27 @@ public class JdbcFActory {
             System.out.println("Driver não encontrado.....");
 
         } catch (SQLException e ) {
-            if(e.getSQLState().equals("3D000")){
-                System.out.println("Banco de dados não existe");
-
-            }else if(e.getSQLState().equals("28P01")){
-                System.out.println("Senha Invalida");
-
-            }else {
-                System.out.println("SQL ERRO" + e.getMessage() + "| ERRO CODE" + e.getSQLState());
-            }
+            tratarDoBanco(e);
         }
         return null;
+    }
+
+    /**
+     * Roberto Araujo 
+     * Tratando erros do sql
+     * @param @{link SQLException} excesão
+     *
+     */
+
+    private void tratarDoBanco(SQLException e) {
+        if(e.getSQLState().equals("3D000")){
+            System.out.println("Banco de dados não existe");
+
+        }else if(e.getSQLState().equals("28P01")){
+            System.out.println("Senha Invalida");
+
+        }else {
+            System.out.println("SQL ERRO" + e.getMessage() + "| ERRO CODE" + e.getSQLState());
+        }
     }
 }
