@@ -33,8 +33,8 @@ public class JdbcAplication {
 
         AutorDao autorDao = new AutorDao();
         //autorDao.salvar(autor);
-        autorDao.listaDeArry().forEach(System.out::println);
-        System.out.println(autorDao.procuraPorid(1));
+        autorDao.listarTodos().forEach(System.out::println);
+        System.out.println(autorDao.procurarPorId(1));
 
     }
 
