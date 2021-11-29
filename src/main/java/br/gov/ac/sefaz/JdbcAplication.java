@@ -1,6 +1,10 @@
 package br.gov.ac.sefaz;
 import br.gov.ac.sefaz.dao.AutorDao;
-
+/**
+ * Roberto Araujo de Moraes
+ * Rio Branco - Acre
+ *
+ */
 public class JdbcAplication {
 
     public static void main(String[] args) {

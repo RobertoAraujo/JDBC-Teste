@@ -8,7 +8,11 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-
+/**
+ * Roberto Araujo de Moraes
+ * Rio Branco - Acre
+ *
+ */
 public class AutorDao {
     private static final String SQL_INSERT = "INSERT INTO autor (id, nome, idade, nascimento, comentario) VALUES (?, ?, ?, ?, ?)";
     private static final String SQL_LIST_ALL = "SELECT * FROM autor";

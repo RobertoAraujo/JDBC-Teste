@@ -3,7 +3,11 @@ package br.gov.ac.sefaz.classes;
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.Objects;
-
+/**
+ * Roberto Araujo de Moraes
+ * Rio Branco - Acre
+ *
+ */
 public class Autor implements Serializable {
 
     public static final Long SerialVersionUID= 1L;
